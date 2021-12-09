@@ -1,0 +1,42 @@
+@import 'vars';
+
+
+.sign-in {
+  color: $MainHeaderColor;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+
+
+
+  &-button {
+    display: inline-block;
+    border: none;
+    background: transparent;
+    color: inherit;
+
+    font-family: $Poppins;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+
+    text-align: right;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+}
+
+.bag-icon {
+  width: 32px;
+  height: 32px;
+}
+
+
+@media (max-width: 768px), screen and (orientation: portrait) {
+
+}
+
+
+@media (max-width: 576px), screen and (orientation: portrait) {
+
+}

@@ -1,0 +1,25 @@
+@import 'vars';
+
+
+.app-wrapper {
+  //height: 100vh;
+  height: 1024px;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+
+@media (max-width: 768px), screen and (orientation: portrait) {
+
+}
+
+
+@media (max-width: 576px), screen and (orientation: portrait) {
+
+}
