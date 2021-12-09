@@ -3,7 +3,7 @@
 .main {
 
   .header {
-    height: 140px;
+    height: 125px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -15,10 +15,11 @@
     &-inner {
       width: 100%;
       margin: auto;
-      padding: 0 25px;
+      padding: 0 23px;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      align-items: center;
     }
 
     &-label {
@@ -91,7 +92,7 @@
     .sign-in {
         color: $MainHeaderColor;
         display: flex;
-        gap: 10px;
+        gap: 6px;
         align-items: center;
 
         &-button {
@@ -123,7 +124,7 @@
         list-style-type: none;
         display: flex;
         flex-direction: row;
-        gap: 35px;
+        gap: 32px;
 
         &-item {
 
