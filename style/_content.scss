@@ -29,4 +29,7 @@
 
 @media (max-width: 576px), screen and (orientation: portrait) {
 
+  .content__title {
+    display: none;
+  }
 }
