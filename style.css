@@ -309,10 +309,11 @@
   border-radius: 3px;
 }
 
-@media (max-width: 768px), screen and (orientation: portrait) {
+@media (max-width: 576px), screen and (orientation: portrait) {
   .register {
     margin: 0 auto;
     padding: 12px 24px;
+    width: 100%;
     height: auto;
   }
 }
@@ -411,7 +412,7 @@
 }
 @media (max-width: 576px), screen and (orientation: portrait) {
   .right-arrow {
-    display: inline-block;
+    display: inline-flex;
   }
 
   .footer {
@@ -423,8 +424,8 @@
   }
   .footer-section {
     max-width: 100%;
-    padding: 12px 24px;
-    margin-bottom: 8px;
+    padding: 12px 32px 6px;
+    margin-bottom: 2px;
   }
   .footer-section__title {
     display: flex;
@@ -445,6 +446,46 @@
     margin: 0 auto;
     align-items: center;
     gap: 20px;
+  }
+}
+#accordion-1,
+#accordion-2,
+#accordion-3,
+#accordion-4 {
+  display: none;
+}
+
+@media (max-width: 576px), screen and (orientation: portrait) {
+  #accordion-1,
+#accordion-2,
+#accordion-3,
+#accordion-4 {
+    display: flex;
+  }
+
+  .accordion-item {
+    position: relative;
+  }
+  .accordion-item__input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .accordion-item__content {
+    border-top: none;
+    display: none;
+  }
+
+  .accordion-item__input:checked ~ .accordion-item__trigger .right-arrow {
+    display: none;
+  }
+  .accordion-item__input:checked ~ .accordion-item__trigger .down-arrow {
+    display: flex;
+  }
+
+  .accordion-item__input:checked ~ .accordion-item__content {
+    display: flex;
   }
 }
 html {
