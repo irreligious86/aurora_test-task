@@ -81,14 +81,15 @@
 
 
 @media (max-width: 768px), screen and (orientation: portrait) {
-  .register {
-    margin: 0 auto;
-    padding: 12px 24px;
-    height: auto;
-  }
+
 }
 
 
 @media (max-width: 576px), screen and (orientation: portrait) {
-
+  .register {
+    margin: 0 auto;
+    padding: 12px 24px;
+    width: 100%;
+    height: auto;
+  }
 }

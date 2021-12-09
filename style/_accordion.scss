@@ -1,0 +1,49 @@
+#accordion-1,
+#accordion-2,
+#accordion-3,
+#accordion-4 {
+  display: none;
+}
+
+@media (max-width: 576px), screen and (orientation: portrait) {
+  #accordion-1,
+  #accordion-2,
+  #accordion-3,
+  #accordion-4 {
+    display: flex;
+  }
+
+  .accordion-item {
+      position: relative;
+
+      &__input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+      }
+
+      &__trigger {
+
+      }
+
+      &__content {
+        border-top: none;
+        display: none;
+      }
+  }
+
+  .accordion-item__input:checked ~ .accordion-item__trigger {
+    .right-arrow {
+      display: none;
+    }
+    .down-arrow {
+      display: flex;
+    }
+  }
+
+  .accordion-item__input:checked ~ .accordion-item__content {
+    display: flex;
+  }
+
+}
