@@ -119,7 +119,7 @@
 @media (max-width: 576px), screen and (orientation: portrait) {
 
   .right-arrow {
-    display: inline-block;
+    display: inline-flex;
   }
 
   .footer {
@@ -132,8 +132,8 @@
 
     &-section {
       max-width: 100%;
-      padding: 12px 24px;
-      margin-bottom: 8px;
+      padding: 12px 32px 6px;
+      margin-bottom: 2px;
 
       &__title {
         display: flex;
