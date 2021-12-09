@@ -488,6 +488,42 @@
     display: flex;
   }
 }
+.main-secondary-style {
+  background-image: url("./assets/img/hp-oh-hi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex: 1 1 100px;
+}
+.main-secondary-style .header {
+  background: none;
+  background-color: #fff;
+  color: black;
+}
+.main-secondary-style .header-label {
+  color: black;
+}
+.main-secondary-style .header-search {
+  background-color: #F2F2F2;
+}
+.main-secondary-style .header-search input {
+  color: black;
+}
+.main-secondary-style .header-search input::-webkit-input-placeholder {
+  color: #000000;
+}
+.main-secondary-style .header-search button {
+  color: black;
+}
+.main-secondary-style .header .sign-in {
+  color: black;
+}
+.main-secondary-style .header .nav-list-item__title {
+  color: black;
+}
 html {
   background: #F2F2F2;
   box-shadow: 0 0 35px -5px rgba(0, 0, 0, 0.6);
