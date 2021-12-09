@@ -14,5 +14,7 @@
 
 
 @media (max-width: 576px), screen and (orientation: portrait) {
-
+  .subheader {
+    display: none;
+  }
 }
