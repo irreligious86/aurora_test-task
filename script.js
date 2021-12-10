@@ -11,7 +11,6 @@ const userStateCase = document.querySelectorAll('.user-state-case');
 
 const userStateHandler = () => {
     userStateCase.forEach(i => {
-        console.log(i)
         i.classList.toggle('hidden');
     })
 };
