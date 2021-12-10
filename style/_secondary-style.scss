@@ -45,6 +45,8 @@
       color: black;
     }
 
+
+
   }
 
   .content {
@@ -54,11 +56,13 @@
 }
 
 
-@media (max-width: 768px), screen and (orientation: portrait) {
+@media (max-width: 768px), screen and (orientation: portrait) and (orientation: landscape) {
 
 }
 
 
-@media (max-width: 576px), screen and (orientation: portrait) {
+@media (max-width: 576px), screen and (orientation: portrait) and (orientation: landscape) {
+
+
 
 }
