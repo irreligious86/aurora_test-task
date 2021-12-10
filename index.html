@@ -17,18 +17,40 @@
     </div>
 
     <div class="main">
-        <div class="header">
+        <div class="header header-secondary-style">
             <div class='header-inner'>
-                <div class="header-button-group">
+                <div class="header-button-group auto-hidden-576">
                     <button
                             type="button"
                             class="menu-burger">
-                        <img src="./assets/icon/menu-burger.svg" alt="menu">
+                        <object class="menu-burger--white styled-icon"
+                                type="image/svg+xml"
+                                data="assets/icon/menu-burger--white.svg">
+                            <img
+                                    src="assets/icon/menu-burger--white.svg">
+                        </object>
+                        <object class="menu-burger--black styled-icon hidden"
+                                type="image/svg+xml"
+                                data="assets/icon/menu-burger--black.svg">
+                            <img
+                                    src="assets/icon/menu-burger--black.svg">
+                        </object>
                     </button>
                     <button
                             type="button"
                             class="search-button-sm">
-                        <img src="./assets/icon/search.svg" alt="search">
+                        <object class="search-button--white styled-icon"
+                                type="image/svg+xml"
+                                data="assets/icon/search-button--white.svg">
+                            <img
+                                    src="assets/icon/search-button--white.svg">
+                        </object>
+                        <object class="search-button--black styled-icon hidden"
+                                type="image/svg+xml"
+                                data="assets/icon/search-button--black.svg">
+                            <img
+                                    src="assets/icon/search-button--black.svg">
+                        </object>
                     </button>
                 </div>
                 <h2 class='header-label'>Aurora</h2>
@@ -38,37 +60,63 @@
                             type="text"
                             placeholder="What are you looking for?"/>
                     <button type="submit">
-                        <img src="./assets/icon/search.svg" alt="search">
+                        <object class="search-button--white styled-icon"
+                                type="image/svg+xml"
+                                data="assets/icon/search-button--white.svg">
+                            <img
+                                    src="assets/icon/search-button--white.svg">
+                        </object>
+                        <object class="search-button--black styled-icon hidden"
+                                type="image/svg+xml"
+                                data="assets/icon/search-button--black.svg">
+                            <img
+                                    src="assets/icon/search-button--black.svg">
+                        </object>
                     </button>
                 </form>
 
-               <div class="header-button-group">
-                   <span class="invitation-label">
+                <div class="header-button-group">
+                    <div class="user-state">
+                    <span class="invitation-label  user-state-case  hidden">
                        Hi, Angels!
-                   </span>
-                   <div class="sign-in">
-                       <button
-                               type='button'
-                               class="sign-in-button">
-                           Sign In
-                       </button>
-                       |
-                       <button
-                               type='button'
-                               class="sign-in-button">
-                           Register
-                       </button>
-                   </div>
-                   <button
-                           type='button'
-                           class="sign-in-button">
-                       <img class="bag-icon" src="./assets/icon/bag.svg"/>
-                   </button>
-                   <button
-                           type="button"
-                           class="counter">25</button>
-               </div>
+                        </span>
 
+                        <div class="sign-in user-state-case">
+
+                            <button
+                                    type='button'
+                                    class="sign-in-button">
+                                Sign In
+                            </button>
+                            |
+                            <button
+                                    type='button'
+                                    class="sign-in-button">
+                                Register
+                            </button>
+                        </div>
+                    </div>
+                    <button
+                            type='button'
+                            class="sign-in-button">
+                        <object class="bag-button--white styled-icon"
+                                type="image/svg+xml"
+                                data="assets/icon/bag-button--white.svg">
+                            <img
+                                    src="assets/icon/bag-button--white.svg">
+                        </object>
+                        <object class="bag-button--black styled-icon hidden"
+                                type="image/svg+xml"
+                                data="assets/icon/bag-button--black.svg">
+                            <img
+                                    src="assets/icon/bag-button--black.svg">
+                        </object>
+                    </button>
+                    <button
+                            type="button"
+                            class="counter">25
+                    </button>
+                </div>
             </div>
 
             <nav class='header-navigation'>
@@ -79,7 +127,9 @@
                         </span>
                     </li>
                     <li class='nav-list-item'><span
-                            class='nav-list-item__title'>women</span></li>
+                            class='nav-list-item__title'>women</span>
+
+                    </li>
                     <li class='nav-list-item'><span
                             class='nav-list-item__title'>accessories</span></li>
                     <li class='nav-list-item'><span
@@ -93,7 +143,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="content">
+        <div class="content content-secondary-style">
             <h1 class="content__title">
                 Hello! Welcome to Aurora
             </h1>
@@ -123,8 +173,8 @@
                 <input type="checkbox" id="accordion-1" class="accordion-item__input">
                 <label for="accordion-1" class="footer-section__title accordion-item__trigger">
                     About Us
-                    <img class="right-arrow" src="./assets/icon/right-arrow.svg" alt="right">
-                    <img class="down-arrow" src="./assets/icon/down-arrow.svg" alt="down">
+                    <img class="right-arrow" src="assets/icon/arrow-right.svg" alt="right">
+                    <img class="down-arrow" src="assets/icon/arrow-down.svg" alt="down">
                 </label>
                 <ul class="footer-section-list accordion-item__content">
                     <li class="footer-section__item">
@@ -145,8 +195,8 @@
                 <input type="checkbox" id="accordion-2" class="accordion-item__input">
                 <label for="accordion-2" class="footer-section__title accordion-item__trigger">
                     Categories
-                    <img class="right-arrow" src="./assets/icon/right-arrow.svg" alt="right">
-                    <img class="down-arrow" src="./assets/icon/down-arrow.svg" alt="down">
+                    <img class="right-arrow" src="assets/icon/arrow-right.svg" alt="right">
+                    <img class="down-arrow" src="assets/icon/arrow-down.svg" alt="down">
                 </label>
                 <ul class="footer-section-list accordion-item__content">
                     <li class="footer-section__item">
@@ -167,8 +217,8 @@
                 <input type="checkbox" id="accordion-3" class="accordion-item__input">
                 <label for="accordion-3" class="footer-section__title accordion-item__trigger">
                     Help
-                    <img class="right-arrow" src="./assets/icon/right-arrow.svg" alt="right">
-                    <img class="down-arrow" src="./assets/icon/down-arrow.svg" alt="down">
+                    <img class="right-arrow" src="assets/icon/arrow-right.svg" alt="right">
+                    <img class="down-arrow" src="assets/icon/arrow-down.svg" alt="down">
                 </label>
                 <ul class="footer-section-list accordion-item__content">
                     <li class="footer-section__item">
@@ -189,8 +239,8 @@
                 <input type="checkbox" id="accordion-4" class="accordion-item__input">
                 <label for="accordion-4" class="footer-section__title accordion-item__trigger">
                     Payments & Delivery
-                    <img class="right-arrow" src="./assets/icon/right-arrow.svg" alt="right">
-                    <img class="down-arrow" src="./assets/icon/down-arrow.svg" alt="down">
+                    <img class="right-arrow" src="assets/icon/arrow-right.svg" alt="right">
+                    <img class="down-arrow" src="assets/icon/arrow-down.svg" alt="down">
                 </label>
                 <ul class="footer-section-list accordion-item__content">
                     <li class="footer-section__item">

@@ -1,0 +1,68 @@
+@import 'vars';
+
+
+.main-secondary-style {
+  background-image: url("./assets/img/hp-oh-hi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex: 1 1 100px;
+
+
+  .header {
+    background: none;
+    background-color: #fff;
+    color: black;
+
+    &-label {
+      color: black;
+    }
+
+    &-search {
+      background-color: #F2F2F2;
+    }
+
+    &-search input {
+      color: black;
+    }
+
+    &-search input::-webkit-input-placeholder {
+      color: #000000;
+    }
+
+    &-search button {
+      color: black;
+    }
+
+    .sign-in {
+      color: black;
+    }
+
+    .nav-list-item__title {
+      color: black;
+    }
+
+    .invitation-label {
+      color: black;
+    }
+  }
+
+  .content {
+
+  }
+
+}
+
+
+@media (max-width: 768px), screen and (orientation: portrait) and (orientation: landscape) {
+
+}
+
+
+@media (max-width: 576px), screen and (orientation: portrait) and (orientation: landscape) {
+
+
+}

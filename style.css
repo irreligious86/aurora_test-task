@@ -110,26 +110,6 @@
   width: 42px;
   cursor: pointer;
 }
-.header .sign-in {
-  color: #fff;
-  display: flex;
-  gap: 6px;
-  align-items: center;
-}
-.header .sign-in-button {
-  display: inline-block;
-  border: none;
-  background: transparent;
-  color: inherit;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 16px;
-  white-space: nowrap;
-  text-align: right;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
 .header-navigation {
   margin: auto;
 }
@@ -152,12 +132,31 @@
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
 }
 
-.bag-icon {
-  width: 32px;
-  height: 32px;
+.sign-in {
+  color: #fff;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.sign-in-button {
+  display: inline-block;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 16px;
+  white-space: nowrap;
+  text-align: right;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .invitation-label {
+  display: flex;
+  gap: 6px;
+  align-items: center;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 11px;
@@ -165,8 +164,12 @@
   text-align: right;
   letter-spacing: 1px;
   white-space: nowrap;
-  color: #000000;
-  display: none;
+  color: #ffffff;
+}
+
+.bag-icon {
+  width: 32px;
+  height: 32px;
 }
 
 .counter {
@@ -174,7 +177,7 @@
   height: 25px;
   border: none;
   background: #F2DA91;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.08);
   border-radius: 50%;
   display: none;
 }
@@ -187,6 +190,10 @@
   display: none;
 }
 
+.right-arrow, .down-arrow {
+  display: none;
+}
+
 @media (max-width: 768px), screen and (orientation: portrait) and (orientation: landscape) {
   .header-navigation .nav-list {
     justify-content: space-evenly;
@@ -194,10 +201,19 @@
   }
 }
 @media (max-width: 576px), screen and (orientation: portrait) and (orientation: landscape) {
+  .header {
+    height: 85px;
+  }
   .header-inner {
     gap: 8px;
+    position: relative;
   }
   .header-search {
+    position: absolute;
+    width: 90vw;
+    top: 50px;
+    left: 15px;
+    right: 15px;
     display: none;
   }
   .header .sign-in {
@@ -222,8 +238,31 @@
     width: 42px;
     cursor: pointer;
   }
-  .header .header-navigation .nav-list {
+  .header .header-navigation {
     display: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+  }
+  .header .header-navigation .nav-list {
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 35px;
+    left: 0;
+    flex-direction: column;
+    gap: 0;
+    width: 100vw;
+    margin: -18px;
+    color: black;
+  }
+  .header .header-navigation .nav-list-item {
+    padding: 0 18px;
+    border-bottom: 1px solid #F7F7F7;
+  }
+  .header .header-navigation .nav-list-item__title {
+    color: black;
   }
 }
 .content {
@@ -488,6 +527,45 @@
     display: flex;
   }
 }
+.main-secondary-style {
+  background-image: url("./assets/img/hp-oh-hi.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  flex: 1 1 100px;
+}
+.main-secondary-style .header {
+  background: none;
+  background-color: #fff;
+  color: black;
+}
+.main-secondary-style .header-label {
+  color: black;
+}
+.main-secondary-style .header-search {
+  background-color: #F2F2F2;
+}
+.main-secondary-style .header-search input {
+  color: black;
+}
+.main-secondary-style .header-search input::-webkit-input-placeholder {
+  color: #000000;
+}
+.main-secondary-style .header-search button {
+  color: black;
+}
+.main-secondary-style .header .sign-in {
+  color: black;
+}
+.main-secondary-style .header .nav-list-item__title {
+  color: black;
+}
+.main-secondary-style .header .invitation-label {
+  color: black;
+}
 html {
   background: #F2F2F2;
   box-shadow: 0 0 35px -5px rgba(0, 0, 0, 0.6);
@@ -502,6 +580,16 @@ html {
 
 .hidden {
   display: none;
+}
+
+.auto-hidden-576 {
+  display: none;
+}
+
+@media (max-width: 576px), screen and (orientation: portrait) and (orientation: landscape) {
+  .auto-hidden-576 {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
