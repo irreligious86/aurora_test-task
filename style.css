@@ -552,4 +552,14 @@ html {
   display: none;
 }
 
+.auto-hidden-576 {
+  display: none;
+}
+
+@media (max-width: 576px), screen and (orientation: portrait) and (orientation: landscape) {
+  .auto-hidden-576 {
+    display: flex;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
