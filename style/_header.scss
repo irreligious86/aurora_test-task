@@ -159,7 +159,7 @@
   letter-spacing: 1px;
   white-space: nowrap;
   color: #000000;
-  display: none;
+  //display: none;
 }
 
 .counter {
@@ -195,9 +195,15 @@
 
     &-inner {
       gap: 8px;
+      position: relative;
     }
 
     &-search {
+      position: absolute;
+      width: 90vw;
+      top: 50px;
+      left: 15px;
+      right: 15px;
       display: none;
     }
 
@@ -230,6 +236,10 @@
     .header-navigation .nav-list {
       display: none;
     }
+
+    //.invitation-label {
+    //  display: inline-block;
+    //}
 
   }
 

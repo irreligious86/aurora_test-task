@@ -166,7 +166,6 @@
   letter-spacing: 1px;
   white-space: nowrap;
   color: #000000;
-  display: none;
 }
 
 .counter {
@@ -196,8 +195,14 @@
 @media (max-width: 576px), screen and (orientation: portrait) and (orientation: landscape) {
   .header-inner {
     gap: 8px;
+    position: relative;
   }
   .header-search {
+    position: absolute;
+    width: 90vw;
+    top: 50px;
+    left: 15px;
+    right: 15px;
     display: none;
   }
   .header .sign-in {
